@@ -1,0 +1,12 @@
+[program:app]
+command=/bin/bash -c "<%=@exec_dir%>/node-<%=@nodejs_version%>-linux-x64/bin/node init.js"
+process_name=%(program_name)s
+directory=<%=@deploy_dir%>
+autorestart=false
+stdout_logfile=<%=@log_dir%>/stdout.log
+stderr_logfile=<%=@log_dir%>/stderr.logs
+
+
+
+
+

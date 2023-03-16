@@ -1,0 +1,14 @@
+processManagement:
+  fork: false
+net:
+  bindIp: 0.0.0.0
+  port: 27017
+storage:
+  dbPath: <%=@data_dir%>
+systemLog:
+  destination: file
+  path: "<%=@log_dir%>/mongod.log"
+  logAppend: true
+storage:
+  journal:
+    enabled: true
